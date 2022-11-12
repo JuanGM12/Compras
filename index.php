@@ -25,14 +25,13 @@ while($mostrar=mysqli_fetch_array($result)){
         ?>
 
 <div class="anuncio">
-<img src="data:image/jpg;base64,<?php echo base64_encode($mostrar['imagen']) ?>" alt="Anuncio"/></td>
+<img src="data:image/jpg;base64,<?php echo base64_encode($mostrar['imagen']) ?>" alt="Anuncio" class="anuncioimg"/></td>
 <div class="contenido-anuncio">
 <h3><?php echo $mostrar['producto'] ?></h3>
 <p><?php echo $mostrar['descripcion'] ?></p>
-<p class="precio">$<?php echo $mostrar['precio'] ?></p>
 <ul class="iconos-caracteristicas">
-    <li><img src="img/codigo.svg" alt="Codigo"></li>
-    <p><?php echo $mostrar['codigo'] ?></p>
+    <li><img src="img/codigo.svg" alt="Precio"></li>
+    <p class="precio">$<?php echo $mostrar['precio'] ?></p>
 <li><img src="img/stock.svg" alt="Stock"></li>
 <p><?php echo $mostrar['cantidad'] ?></p>
 </ul>
