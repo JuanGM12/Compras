@@ -24,10 +24,8 @@
 			</div>
 
 			<div class="enlaces">
-				<a href="#">Cuenta</a>
-				<a href="#">Promociones</a>
-				<a href="#">Regalos</a>
-				<a href="#">Ayuda</a>
+				<a href="#">Crea Tu Cuenta</a>
+				<a href="#">Ingresa</a>
 			</div>
 		</div>
 

@@ -15,6 +15,7 @@
         <input type="text" name="descripcion" placeholder="Descripción: " value="" required/>
         <input type="text" name="precio" placeholder="Precio: " value="" required/>
         <input type="text" name="cantidad" placeholder="Cantidad: " value="" required/>
+        <input type="text" name="idcategoria" placeholder="Categoria: " value="" required/>
         <input type="file" name="imagen" required/>
         <input type="submit" value="Aceptar"/>
     </form>
