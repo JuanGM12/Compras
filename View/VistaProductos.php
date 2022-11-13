@@ -1,5 +1,5 @@
 <?php
-include ('Controller/conexion.php');
+include ('../Controller/conexion.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,8 +8,8 @@ include ('Controller/conexion.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Compras</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body>
     <main>
@@ -19,7 +19,10 @@ include ('Controller/conexion.php');
 
         <?php
 $sql="SELECT * FROM productos";
-$result = mysqli_query($conn, $sql);
+$objConexion = new Conexion();
+    $objConexion->abrirBd("localhost", "root", "", "compras", 3306);
+    $result = $objConexion->ejecutarSelect($sql);
+    $objConexion->cerrarBd();
 
 while($mostrar=mysqli_fetch_array($result)){
         ?>

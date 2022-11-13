@@ -1,5 +1,6 @@
 <?php
-
+    include ('../Controller/Sesiones.php');
+    include ('../Controller/ControlLogueado.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,5 +1,5 @@
 <?php
-
+include ('Controller/Sesiones.php');
 ?>
 
 <!DOCTYPE html>
@@ -24,8 +24,8 @@
 			</div>
 
 			<div class="enlaces">
-				<a href="#">Crea Tu Cuenta</a>
-				<a href="#">Ingresa</a>
+				<a href="View/VistaCrearCuenta.php">Crea Tu Cuenta</a>
+				<a href="View/VistaIniciarSesion.php">Ingresa</a>
 			</div>
 		</div>
 
@@ -264,6 +264,9 @@
 			</div>
 		</div>
 	</nav>
+	<form action="#" method="post">
+	<button name="btncerrar">Cerrar Sesión</button>
+</form>
 
 	<main class="contenedor" >
 		<article></article>
